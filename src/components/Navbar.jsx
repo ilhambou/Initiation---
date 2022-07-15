@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
-import { BiHomeAlt,BiMenuAltRight } from "react-icons/bi";
+import { BiHomeAlt,BiMenuAltRight,BiMessageAltDetail } from "react-icons/bi";
 import { RiProfileLine } from "react-icons/ri";
-import { GrServices,GrContact } from "react-icons/gr";
 import { MdProductionQuantityLimits } from "react-icons/md";
+import { MdMiscellaneousServices  } from "react-icons/md";
+
 
 
 
@@ -114,7 +115,7 @@ const NavLinks = styled(LinkS)`
 
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
     <Nav>
@@ -141,7 +142,7 @@ const Navbar = () => {
 
             <NavItem>
                 <NavLinks to='services'>
-                    <GrServices/>
+                    <MdMiscellaneousServices/>
                         <hr/><hr/>
                         Services
                     </NavLinks>
@@ -155,13 +156,13 @@ const Navbar = () => {
             </NavItem>
             <NavItem>
                 <NavLinks to='contact'>
-                    <GrContact />
+                    <BiMessageAltDetail />
                        <hr/><hr/>
                        Contact
                     </NavLinks>
             </NavItem>
         </NavMenu>
-        <MobileIcon>
+        <MobileIcon onClick={toggle}>
             <BiMenuAltRight />
         </MobileIcon>
         </NavbarContainer>
