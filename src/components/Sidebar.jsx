@@ -16,7 +16,7 @@ const SidebarContainer = styled.aside`
     display: block ;
     position: fixed ;
     z-index: 999;
-    width: 50%;
+    width: 35%;
     height: 100% ;
     background: #3D3D3D;
     display: grid;
@@ -86,7 +86,8 @@ const SidebarLink = styled(LinkS)`
     max-width: 1100px;
 
       &:hover {
-        color: #2D86E9;
+        color:#F28968;
+        color: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
         transition: 0.2s ease-in;
 
 

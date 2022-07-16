@@ -45,7 +45,7 @@ const NavbarContainer = styled.div`
 `
 const Navlogo = styled(LinkR)`
 
-    color: black;
+    color: #113A68;
     display: flex;
     justify-self: flex-start;
     cursor: pointer;
@@ -108,6 +108,41 @@ const NavLinks = styled(LinkS)`
        {
           border-bottom: 3px solid #01bf71
        } 
+
+   
+  
+    position: relative;
+    transition: all .8s ease;
+
+    &::after{
+        position: absolute;
+        content: '';
+       
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+      
+    }
+
+    &:hover{
+        // color: #738bdc;
+        // color: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
+        color:#F28968;
+        
+        z-index: 1;
+        transition: all .02s ease;
+
+    }
+
+    &:hover::after{
+        height: 50%;
+        z-index: -1;
+        border: solid;
+        border-radius: 50px / 40px;
+    }
+
+    
 `
 
 
@@ -119,7 +154,7 @@ const Navbar = ({ toggle }) => {
   return (
     <>
     <Nav>
-    <Navlogo to=''>Epselon</Navlogo>
+    <Navlogo to=''>Logo</Navlogo>
         <NavbarContainer>
        
         
