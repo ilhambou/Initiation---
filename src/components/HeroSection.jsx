@@ -1,6 +1,7 @@
 import React from 'react'
 import bgImg from '../pic/back_d.png'
 import bgImgt from '../pic/back_two.png'
+import { Zoom } from 'react-reveal'
 
 
 
@@ -103,13 +104,14 @@ function HeroSection() {
             <img src={bgImgt} alt="/" />
             </Heroimg>
         <HeroContent>
-            
+            <Zoom duration={800}>
             
             <HeroH1>xxxxxxxxxxxxxx</HeroH1>
             <HeroH1>xxxxxxxxxxxxxx</HeroH1>
 
             <HeroP>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</HeroP>
             <HeroP>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</HeroP>
+            </Zoom>
         </HeroContent>
 
     </HeroContainer>
