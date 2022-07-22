@@ -1,0 +1,70 @@
+
+
+.Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 60px;
+}
+
+.Card{
+    width: 350px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+}
+
+img{
+   
+    transition: .5s;
+    max-width: 100%;
+    
+}
+.intro
+{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+}
+
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.Card:hover{
+    cursor: pointer;
+}
+
+.Card:hover .intro{
+    height: 200px;
+    bottom: 240px;
+    background: rgb(129, 127, 127);
+    
+   
+}
+.Card:hover p{
+   opacity: 1; 
+   visibility: visible;
+}
+
+.Card:hover img{
+    transform: scale(1.1) rotate(-3deg) ;
+}

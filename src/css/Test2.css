@@ -1,0 +1,111 @@
+
+.test{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: 10px;
+  margin-left: 35px;
+  
+}
+img{
+	max-width: 100%;
+}
+.ui-card{
+	width: 350px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+}
+
+.ui-card img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-out;
+}
+.ui-card:hover img{
+	transform: scale(1.1) translateY(-20px); 
+	opacity: 0.3
+}
+.ui-card .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+.ui-card .description h3{
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+
+}
+.ui-card .description p{
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+.ui-card .description a{
+	color: #fff;
+	background:#34aff3;
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.4s;
+}
+.ui-card .description a:hover{
+	background:#0a83c5;
+}
+.ui-card:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+h2{
+	font-family: sans-serif;
+	margin: 100px auto;
+	text-align: center;
+	font-size: 40px;
+	max-width: 600px;
+	position:relative;
+	}
+	h2:before{
+	content: "";
+	display:block;
+	width: 120px;
+	height:2px;
+	background: #000;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: -2;
+	}
+	h2:after{
+	content: "";
+	display:block;
+	width: 120px;
+	height:2px;
+	background: #000;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: -2;
+	}
+	span{
+	background: #fff
+	}

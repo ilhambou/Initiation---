@@ -14,7 +14,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     // background: #fff;
     background-color: #f6f6f6;
-background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
     height: 85px;
     display: flex;
     align-items: center;
@@ -157,7 +157,8 @@ const Navbar = ({ toggle }) => {
   return (
     <>
     <Nav>
-    <Navlogo to=''>Logo</Navlogo>
+    <Navlogo to=''>FISLANE</Navlogo>
+    
         <NavbarContainer>
        
         
