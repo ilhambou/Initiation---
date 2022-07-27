@@ -18,7 +18,7 @@ const SidebarContainer = styled.aside`
     z-index: 999;
     width: 35%;
     height: 100% ;
-    background: #3D3D3D;
+    background: #33383b;
     display: grid;
     align-items: center;
     top: 0;

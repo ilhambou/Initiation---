@@ -1,63 +1,72 @@
 
-h2{
-	font-family: sans-serif;
-	margin: 100px auto;
-	text-align: center;
-	font-size: 40px;
-	max-width: 600px;
-	position:relative;
+	.about{
+		background: url(../pic/p1.jpg) no-repeat left;
+		background-size: 55%;
+		background-color: #fdfdfd;
+		overflow: hidden;
+		padding: 100px 0;
 	}
-	h2:before{
-	content: "";
-	display:block;
-	width: 120px;
-	height:2px;
-	background: #000;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	z-index: -2;
+	.inner-section{
+		width: 55%;
+		float: right;
+		background-color: #fdfdfd;
+		padding: 60px;
+		box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
 	}
-	h2:after{
-	content: "";
-	display:block;
-	width: 120px;
-	height:2px;
-	background: #000;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	z-index: -2;
+	.inner-section h1{
+		margin-bottom: 30px;
+		font-size: 30px;
+		font-weight: 900;
 	}
-	span{
-	background: #fff
+	.text{
+		font-size: 13px;
+		color: #020202;
+		line-height: 30px;
+		text-align: justify;
+		margin-bottom: 40px;
 	}
-
-    h4{
-        text-align: center;
-        
-    }
-    .box{
-        border: 3px solid rgb(6, 59, 138);
-        max-width: 900px;
-        width: 100%;
-        margin: auto;
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(241, 240, 240);
-        border-radius: 15px 50px
-        
-        
-    }
-
-    .box:hover {
-            transform: scale(1.2);
-           background-color: rgb(255, 255, 255);
-          }
-
-  
-
-    
-    
+	.skills button{
+		font-size: 22px;
+		text-align: center;
+		letter-spacing: 2px;
+		border: none;
+		border-radius: 20px;
+		padding: 8px;
+		width: 200px;
+		background-color: #004a83;
+		color: white;
+		cursor: pointer;
+	}
+	.skills button:hover{
+		transition: 1s;
+		background-color: #ecf5f5;
+		color: #004a83;
+	}
+	@media screen and (max-width:1200px){
+		.inner-section{
+			padding: 80px;
+		}
+	}
+	@media screen and (max-width:1000px){
+		.about{
+			background-size: 100%;
+			padding: 100px 40px;
+		}
+		.inner-section{
+			width: 100%;
+		}
+	}
+	
+	@media screen and (max-width:600px){
+		.about{
+			padding: 0;
+		}
+		.inner-section{
+			padding: 60px;
+		}
+		.skills button{
+			font-size: 19px;
+			padding: 5px;
+			width: 160px;
+		}
+	}

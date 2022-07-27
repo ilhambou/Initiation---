@@ -96,6 +96,7 @@ top: 60px;
 
 function HeroSection() {
   return (
+    <div id='home'>
     <HeroContainer>
         <HeroBg>
             <img src={bgImg} alt="/"/>
@@ -106,15 +107,15 @@ function HeroSection() {
         <HeroContent>
             <Zoom duration={800}>
             
-            <HeroH1>xxxxxxxxxxxxxx</HeroH1>
-            <HeroH1>xxxxxxxxxxxxxx</HeroH1>
+            <HeroH1>Votre partenaire à vos  </HeroH1>
+            <HeroH1>travaux techniques</HeroH1>
 
-            <HeroP>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</HeroP>
-            <HeroP>yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</HeroP>
+            
             </Zoom>
         </HeroContent>
 
     </HeroContainer>
+    </div>
   )
 }
 

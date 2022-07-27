@@ -1,10 +1,30 @@
 
 .test{
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
   grid-gap: 10px;
   margin-left: 35px;
   
+
+  
+}
+
+@media screen and (max-width: 1100px)
+  {
+	.test{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		margin-left: 35px;
+  }
+}
+@media screen and (max-width: 767px)
+  {
+	.test{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+  }
 }
 img{
 	max-width: 100%;
@@ -38,43 +58,36 @@ img{
 .ui-card .description h3{
 	font-weight: 700;
 	font-size: 32px;
-	margin: 0 0 20px;
+	margin: 0 0 215px;
 	transform: translateY(30px);
 	opacity: 0;
 	transition: all 0.3s ease-out;
 
 }
-.ui-card .description p{
-	transform: translateY(30px);
-	opacity: 0;
-	transition: all 0.3s ease-out 0.2s;
-}
+
 .ui-card .description a{
 	color: #fff;
-	background:#34aff3;
 	display: inline-block;
-	padding: 10px 25px;
-	border-radius: 5px;
 	text-decoration: none;
 	transform: translateY(30px);
 	opacity: 0;
-	transition: all 0.3s ease-out 0.4s;
+	transition: all 0.3s ease-out 0.1s;
+	line-height: 1.6;
+
+
 }
-.ui-card .description a:hover{
-	background:#0a83c5;
-}
+ 
+
 .ui-card:hover .description h3{
 	opacity: 1;
 	transform: translateY(0px);
 }
-.ui-card:hover .description p{
-	opacity: 1;
-	transform: translateY(0px);
-}
+
 .ui-card:hover .description a{
 	opacity: 1;
-	transform: translateY(0px);
+	transform: translateY(-130px);
 }
+
 
 h2{
 	font-family: sans-serif;

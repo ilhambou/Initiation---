@@ -157,7 +157,8 @@ const Navbar = ({ toggle }) => {
   return (
     <>
     <Nav>
-    <Navlogo to=''>FISLANE</Navlogo>
+    
+    <Navlogo to='home'>FISLANE</Navlogo>
     
         <NavbarContainer>
        
