@@ -130,7 +130,7 @@ const NavLinks = styled(LinkS)`
     &:hover{
         // color: #738bdc;
         // color: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
-        color:#F28968;
+        color:#113A68;
         
         z-index: 1;
         transition: all .02s ease;

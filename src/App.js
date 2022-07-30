@@ -7,7 +7,7 @@ import HeroSection from './components/HeroSection';
 // import Test from './components/Test'
 import Test2 from './components/Test2'
 import About from './components/About';
-// import Hero2 from './components/Hero2'
+import Hero2 from './components/Hero2';
 import ImageSlider from './components/ImageSlider';
 import { SliderData } from './components/SliderData';
 // import Testsupp from './components/Testsupp'
@@ -19,11 +19,12 @@ function App() {
     <Router>
       <Home/>
       
-      <HeroSection/>
+      <Hero2 />
+      <br/>
       <About />
       <Test2 />
-      {/* <ImageSlider slides={SliderData} />
-      <Vid1 /> */}
+      <ImageSlider slides={SliderData} />
+      <Vid1 />
       <Footer />
       
 

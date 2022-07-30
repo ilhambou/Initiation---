@@ -8,11 +8,13 @@ function Hero2() {
     <div className='banner'>
         <div className='slider'>
             <img src={test1} alt='/' id='slideImg'/>
-
         </div>
         <div className='overlay'>
-            
+            <div className="content">
+              <h3>Votre partenaire à vos travaux techniques</h3>
+            </div>
         </div>
+        
        
 
     </div>
