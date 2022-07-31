@@ -6,7 +6,6 @@ import clim from '../pic/clim.jpeg'
 import "../css/Test2.css"
 
 
-
 function Test2() {
   return (
    <><h2>Les Services</h2>
@@ -16,7 +15,7 @@ function Test2() {
         <img src={reseau} alt="/"/>
 	<div class="description">
 		<h3>Réseaux ip</h3><br />
-		<a href="pic.jsx">Réseaux Informatique</a><br />
+		<a href="led">Réseaux Informatique</a><br />
 		<a href="#">Réseaux intranet</a><br />
 		<a href="#">Fibre optique</a><br />
 		<a href="#">Voix ip </a><br />

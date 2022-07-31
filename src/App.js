@@ -1,6 +1,5 @@
 
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom'
 import Home from './pages/Home';
 import HeroSection from './components/HeroSection';
 // import Service from './components/Service';
@@ -13,22 +12,31 @@ import { SliderData } from './components/SliderData';
 // import Testsupp from './components/Testsupp'
 import Vid1 from './components/Vid1';
 import Footer from './components/Footer'
+import ImageSlider2 from './components/ImageSlider2';
+import { SliderData2 } from './components/SliderData2';
+
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <Home/>
-      
-      <Hero2 />
-      <br/>
-      <About />
-      <Test2 />
-      <ImageSlider slides={SliderData} />
-      <Vid1 />
-      <Footer />
-      
 
-    </Router>
+    <Router>
+       <Home/>
+      
+       <Routes>
+         <Route exact path='/' element={[<Hero2 />,<br/>,<About />,<Test2 />]} />
+         <Route exact path="/led" element={[<ImageSlider slides={SliderData} />,<Vid1 />]} />
+         <Route exact path="/test" element={[<ImageSlider2 slides={SliderData2} />]} />
+
+
+       </Routes>
+       <Footer />
+   </Router>
   );
 }
 
